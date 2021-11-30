@@ -1,0 +1,21 @@
+version: '3.9'
+services:
+    airflow:
+        image: puckel/docker-airflow:1.10.9
+        container_name: airflow
+        networks:
+            - bridge
+    
+    destination-db:
+        image: epiclabs/docker-oracle-xe-11g
+        container_name: destination
+        ports:
+            - "49161:1521"
+        environment:
+            - ORACLE_ALLOW_REMOTE=true
+        networks:
+            - bridge
+
+networks:
+    bridge:
+        driver: bridge
