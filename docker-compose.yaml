@@ -1,10 +1,25 @@
 version: '3.9'
 services:
+
     airflow:
         image: puckel/docker-airflow:1.10.9
         container_name: airflow
+        ports:
+            - "8080:8080"
         networks:
             - bridge
+        volumes:
+            - ./airflow/logs:/usr/local/airflow/logs:rw
+            - ./airflow/plugins:/usr/local/airflow/plugins:rw
+            - ./airflow/.bash_logout:/usr/local/airflow/.bash_logout
+            - ./airflow/.bashrc:/usr/local/airflow/.bashrc
+            - ./airflow/.profile:/usr/local/airflow/.profile
+            # - ./airflow/airflow-webserver.pid:/usr/local/airflow/airflow-webserver.pid
+            - ./airflow/airflow.db:/usr/local/airflow/airflow.db
+            - ./airflow/airflow.cfg:/usr/local/airflow/airflow.cfg
+            - ./airflow/unittests.cfg:/usr/local/airflow/unittests.cfg
+
+
     
     destination-db:
         image: epiclabs/docker-oracle-xe-11g
@@ -15,6 +30,7 @@ services:
             - ORACLE_ALLOW_REMOTE=true
         networks:
             - bridge
+
 
 networks:
     bridge:
