@@ -1,0 +1,68 @@
+[2021-12-01 20:27:38,100] {{dag_processing.py:821}} INFO - Processing files using up to 1 processes at a time 
+[2021-12-01 20:27:38,102] {{dag_processing.py:822}} INFO - Process each file at most once every 0 seconds
+[2021-12-01 20:27:38,102] {{dag_processing.py:824}} INFO - Checking for new files in /usr/local/airflow/dags every 300 seconds
+[2021-12-01 20:27:38,104] {{dag_processing.py:1292}} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-12-01 20:27:38,104] {{dag_processing.py:1296}} INFO - Failing jobs without heartbeat after 2021-12-01 20:22:38.104519+00:00
+[2021-12-01 20:27:50,097] {{dag_processing.py:1292}} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-12-01 20:27:50,098] {{dag_processing.py:1296}} INFO - Failing jobs without heartbeat after 2021-12-01 20:22:50.098249+00:00
+[2021-12-01 20:28:02,111] {{dag_processing.py:1292}} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-12-01 20:28:02,111] {{dag_processing.py:1296}} INFO - Failing jobs without heartbeat after 2021-12-01 20:23:02.111814+00:00
+[2021-12-01 20:28:14,126] {{dag_processing.py:1292}} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-12-01 20:28:14,127] {{dag_processing.py:1296}} INFO - Failing jobs without heartbeat after 2021-12-01 20:23:14.127363+00:00
+[2021-12-01 20:28:51,973] {{dag_processing.py:821}} INFO - Processing files using up to 1 processes at a time 
+[2021-12-01 20:28:51,974] {{dag_processing.py:822}} INFO - Process each file at most once every 0 seconds
+[2021-12-01 20:28:51,974] {{dag_processing.py:824}} INFO - Checking for new files in /usr/local/airflow/dags every 300 seconds
+[2021-12-01 20:28:51,976] {{dag_processing.py:1292}} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-12-01 20:28:51,976] {{dag_processing.py:1296}} INFO - Failing jobs without heartbeat after 2021-12-01 20:23:51.976539+00:00
+[2021-12-01 20:29:03,948] {{dag_processing.py:1292}} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-12-01 20:29:03,948] {{dag_processing.py:1296}} INFO - Failing jobs without heartbeat after 2021-12-01 20:24:03.948733+00:00
+[2021-12-01 20:29:13,959] {{dag_processing.py:1292}} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-12-01 20:29:13,960] {{dag_processing.py:1296}} INFO - Failing jobs without heartbeat after 2021-12-01 20:24:13.960155+00:00
+[2021-12-01 20:29:41,023] {{dag_processing.py:821}} INFO - Processing files using up to 1 processes at a time 
+[2021-12-01 20:29:41,023] {{dag_processing.py:822}} INFO - Process each file at most once every 0 seconds
+[2021-12-01 20:29:41,023] {{dag_processing.py:824}} INFO - Checking for new files in /usr/local/airflow/dags every 300 seconds
+[2021-12-01 20:29:41,026] {{dag_processing.py:1292}} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-12-01 20:29:41,026] {{dag_processing.py:1296}} INFO - Failing jobs without heartbeat after 2021-12-01 20:24:41.026844+00:00
+[2021-12-01 20:29:53,007] {{dag_processing.py:1292}} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-12-01 20:29:53,008] {{dag_processing.py:1296}} INFO - Failing jobs without heartbeat after 2021-12-01 20:24:53.008157+00:00
+[2021-12-01 20:30:05,019] {{dag_processing.py:1292}} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-12-01 20:30:05,020] {{dag_processing.py:1296}} INFO - Failing jobs without heartbeat after 2021-12-01 20:25:05.020295+00:00
+[2021-12-01 20:30:17,032] {{dag_processing.py:1292}} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-12-01 20:30:17,032] {{dag_processing.py:1296}} INFO - Failing jobs without heartbeat after 2021-12-01 20:25:17.032513+00:00
+[2021-12-01 20:30:41,730] {{dag_processing.py:821}} INFO - Processing files using up to 1 processes at a time 
+[2021-12-01 20:30:41,730] {{dag_processing.py:822}} INFO - Process each file at most once every 0 seconds
+[2021-12-01 20:30:41,731] {{dag_processing.py:824}} INFO - Checking for new files in /usr/local/airflow/dags every 300 seconds
+[2021-12-01 20:30:41,732] {{dag_processing.py:1292}} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-12-01 20:30:41,732] {{dag_processing.py:1296}} INFO - Failing jobs without heartbeat after 2021-12-01 20:25:41.732636+00:00
+[2021-12-01 20:30:53,721] {{dag_processing.py:1292}} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-12-01 20:30:53,721] {{dag_processing.py:1296}} INFO - Failing jobs without heartbeat after 2021-12-01 20:25:53.721849+00:00
+[2021-12-01 20:34:34,550] {{dag_processing.py:821}} INFO - Processing files using up to 1 processes at a time 
+[2021-12-01 20:34:34,550] {{dag_processing.py:822}} INFO - Process each file at most once every 0 seconds
+[2021-12-01 20:34:34,550] {{dag_processing.py:824}} INFO - Checking for new files in /usr/local/airflow/dags every 300 seconds
+[2021-12-01 20:34:34,550] {{dag_processing.py:1292}} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-12-01 20:34:34,551] {{dag_processing.py:1296}} INFO - Failing jobs without heartbeat after 2021-12-01 20:29:34.551032+00:00
+[2021-12-01 20:34:46,554] {{dag_processing.py:1292}} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-12-01 20:34:46,557] {{dag_processing.py:1296}} INFO - Failing jobs without heartbeat after 2021-12-01 20:29:46.557164+00:00
+[2021-12-01 20:34:58,566] {{dag_processing.py:1292}} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-12-01 20:34:58,567] {{dag_processing.py:1296}} INFO - Failing jobs without heartbeat after 2021-12-01 20:29:58.567380+00:00
+[2021-12-01 20:35:08,578] {{dag_processing.py:1292}} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-12-01 20:35:08,579] {{dag_processing.py:1296}} INFO - Failing jobs without heartbeat after 2021-12-01 20:30:08.579434+00:00
+[2021-12-01 20:35:20,592] {{dag_processing.py:1292}} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-12-01 20:35:20,592] {{dag_processing.py:1296}} INFO - Failing jobs without heartbeat after 2021-12-01 20:30:20.592678+00:00
+[2021-12-01 20:35:32,604] {{dag_processing.py:1292}} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-12-01 20:35:32,605] {{dag_processing.py:1296}} INFO - Failing jobs without heartbeat after 2021-12-01 20:30:32.605475+00:00
+[2021-12-01 20:35:44,618] {{dag_processing.py:1292}} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-12-01 20:35:44,618] {{dag_processing.py:1296}} INFO - Failing jobs without heartbeat after 2021-12-01 20:30:44.618900+00:00
+[2021-12-01 20:35:56,630] {{dag_processing.py:1292}} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-12-01 20:35:56,630] {{dag_processing.py:1296}} INFO - Failing jobs without heartbeat after 2021-12-01 20:30:56.630816+00:00
+[2021-12-01 20:36:06,641] {{dag_processing.py:1292}} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-12-01 20:36:06,642] {{dag_processing.py:1296}} INFO - Failing jobs without heartbeat after 2021-12-01 20:31:06.642018+00:00
+[2021-12-01 20:36:27,224] {{dag_processing.py:821}} INFO - Processing files using up to 1 processes at a time 
+[2021-12-01 20:36:27,224] {{dag_processing.py:822}} INFO - Process each file at most once every 0 seconds
+[2021-12-01 20:36:27,224] {{dag_processing.py:824}} INFO - Checking for new files in /usr/local/airflow/dags every 300 seconds
+[2021-12-01 20:36:27,225] {{dag_processing.py:1292}} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-12-01 20:36:27,225] {{dag_processing.py:1296}} INFO - Failing jobs without heartbeat after 2021-12-01 20:31:27.225395+00:00
+[2021-12-01 20:36:39,228] {{dag_processing.py:1292}} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-12-01 20:36:39,229] {{dag_processing.py:1296}} INFO - Failing jobs without heartbeat after 2021-12-01 20:31:39.228996+00:00
+[2021-12-01 20:36:51,240] {{dag_processing.py:1292}} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-12-01 20:36:51,241] {{dag_processing.py:1296}} INFO - Failing jobs without heartbeat after 2021-12-01 20:31:51.241514+00:00
