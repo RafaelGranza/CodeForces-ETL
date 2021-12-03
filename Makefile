@@ -29,3 +29,4 @@ stop:
 clean:
 	@echo "Cleaning CodeForces-ETL"
 	@docker-compose down
+	@docker volume rm airflow
