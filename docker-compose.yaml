@@ -9,16 +9,7 @@ services:
         networks:
             - bridge
         volumes:
-            - ./airflow/logs:/usr/local/airflow/logs:rw
-            - ./airflow/plugins:/usr/local/airflow/plugins:rw
-            - ./airflow/.bash_logout:/usr/local/airflow/.bash_logout
-            - ./airflow/.bashrc:/usr/local/airflow/.bashrc
-            - ./airflow/.profile:/usr/local/airflow/.profile
-            # - ./airflow/airflow-webserver.pid:/usr/local/airflow/airflow-webserver.pid
-            - ./airflow/airflow.db:/usr/local/airflow/airflow.db
-            - ./airflow/airflow.cfg:/usr/local/airflow/airflow.cfg
-            - ./airflow/unittests.cfg:/usr/local/airflow/unittests.cfg
-
+            - code_forces_airflow:/usr/local/airflow:rw
 
     
     destination-db:
@@ -35,3 +26,11 @@ services:
 networks:
     bridge:
         driver: bridge
+
+volumes:
+    code_forces_airflow:
+        name: airflow
+        driver_opts:
+            type: none
+            device: ./airflow
+            o: bind
