@@ -1,11 +1,12 @@
 import json
+import pandas as pd
 
 from datetime import datetime
 from airflow.models import DAG, BaseOperator, TaskInstance
 from airflow.utils.decorators import apply_defaults
 from hooks.cf_api_hook import CfApiHook
 
-class CfApiOperator(BaseOperator):
+class CfApiToCsvOperator(BaseOperator):
 
     @apply_defaults
     def __init__(
@@ -23,13 +24,19 @@ class CfApiOperator(BaseOperator):
             query=self.query,
             conn_id=self.conn_id,
         )
-        print(json.dumps(hook.run(), indent=4,sort_keys=True))
+        # jsn = json.loads(hook.run(), indent=4,sort_keys=True)
+        jsn = hook.run()['result']['problems']
+        df = pd.read_json(json.dumps(jsn))
+        print(df)
+        # print(df.to_csv())
+        # python3 plugins/operators/cf_problems_to_csv_operator.py
+        
 
 
 if __name__ == "__main__":
     with DAG(dag_id="CfTest", start_date=datetime.now()) as dag:
-        cfo = CfApiOperator(
-            query="contest.list?gym=true",
+        cfo = CfApiToCsvOperator(
+            query="problemset.problems",
             task_id="test_run" 
         )
         ti = TaskInstance(task=cfo, execution_date=datetime.now())
