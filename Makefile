@@ -12,7 +12,7 @@ all:
 
 build:
 	@echo "Building CodeForces-ETL"
-	@docker-compose up -d
+	@docker-compose up --build -d
 
 start:
 	@echo "Starting CodeForces-ETL"
