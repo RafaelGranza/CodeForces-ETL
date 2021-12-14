@@ -2,6 +2,8 @@ all:
 	@echo "Commands:\n"
 	@echo "   Build the dockers:"
 	@echo "      make build\n"
+	@echo "   Rebuild the dockers:"
+	@echo "      make rebuild\n"
 	@echo "   Start the dockers:"
 	@echo "      make start\n"
 	@echo "   Stop the dockers:"
@@ -13,6 +15,13 @@ all:
 build:
 	@echo "Building CodeForces-ETL"
 	@docker-compose up --build -d
+	# @docker exec -t airflow bash -c "airflow connections --add --conn_id oracle_destiny --conn_uri oracle://system:oracle@$(docker ps -aqf name=destination-db):49161/xe"
+
+rebuild:
+	@echo "Rebuilding CodeForces-ETL"
+	@make clean
+	@make build
+
 
 start:
 	@echo "Starting CodeForces-ETL"
