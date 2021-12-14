@@ -12,11 +12,13 @@ services:
             - bridge
         volumes:
             - code_forces_airflow:/usr/local/airflow:rw
+        environment:
+          - CSV_HOME=/opt/csv
 
     
     destination-db:
         image: epiclabs/docker-oracle-xe-11g
-        container_name: destination
+        container_name: destination-db
         ports:
             - "49161:1521"
         environment:
