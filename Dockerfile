@@ -6,5 +6,6 @@ RUN apt-get -y update
 RUN apt-get -y install python3-pip
 RUN /usr/local/bin/python -m pip install --upgrade pip
 COPY requirements.txt requirements.txt
+RUN mkdir -p /opt/csv
 RUN pip3 install -r requirements.txt
 
